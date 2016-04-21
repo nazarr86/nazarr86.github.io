@@ -1,0 +1,98 @@
+td{
+	border: 9px solid black;
+	text-align: center;
+}
+td,
+tr{
+	margin: 0;
+	padding: 0;
+}
+table{
+	border-collapse: collapse;
+	width: 520px;
+	height: 560px;
+	background: #ffffff;
+	border: 10px solid #ffffff;
+}
+.cell-1{
+	width: 113px;
+	height: 45px;
+}
+.cell-2{
+	width: 196px;
+	height: 45px;
+}
+.cell-3{
+	background: #fff76e;
+	width: 163px;
+	height: 45px;
+}
+.cell-4{
+	width: 45px;
+	height: 127px;
+}
+.cell-5{
+	background: #ff5b2e;
+	width: 266px;
+	height: 266px;
+}
+.cell-7{
+	height: 197px;
+	width: 45px;
+}
+.cell-6{
+	background: #fff76e;
+	width: 162px;
+	height: 125px;
+}
+.cell-8{
+	height: 128px;
+	width: 74px;
+}
+.cell-9{
+	height: 128px;
+	width: 75px;
+}
+.cell-14{
+	background: #fff76e;
+	width: 45px;
+	height: 134px;
+}
+.cell-12{
+	width: 126px;
+	height: 55px;
+}
+.cell-13{
+	width: 160px;
+	height: 55px;
+}
+.cell-17{
+	width: 126px;
+	height: 55px;
+}
+.cell-18{
+	background: #476aa7;
+	width: 160px;
+	height: 92px;
+}
+.cell-10,
+.cell-11,
+.cell-15,
+.cell-16{
+	background: #4b4b4b;
+	width: 60px;
+	height: 55px;
+}
+.cell-19{
+	width: 128px;
+	height: 67px;
+}
+.cell-20{
+	background: #4b4b4b;
+	width: 126px;
+	height: 29px;
+}
+.cell-21{
+	width: 297px;
+	height: 29px;
+}
