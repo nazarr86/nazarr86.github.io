@@ -22,25 +22,39 @@ form.classList.add('question-form');
 parentElement.appendChild(form);
 var k = 0;
 
+
 for(var i = 0; i < test.question.length; i++){
+	
 	var h3 = document.createElement('h3');
-	h3.classList.add('question-header-' + i);
 	h3.innerHTML = i + 1 + '. ' + test.question[i];
 	var formParentElement = document.querySelector('.question-form');
 	formParentElement.appendChild(h3);
 
 	for(var j = 0; j < 3; j++){
+		
 		var checkbox = document.createElement('input');
 		checkbox.type = 'checkbox';
 		checkbox.id = 'test.id[k]';
 		checkbox.name = 'test.answerName[k]';
-		
+
+		var p = document.createElement('p');
+		p.classList.add('elementParagraph');
+		var inputParentElement = document.getElementsByTagName('h3');
+		inputParentElement[i].appendChild(p);
+
 		var label = document.createElement('label');
 		label.for = 'test.id[k]';
 		label.innerHTML = test.answer[k];
 
-		var inputParentElement = document.querySelector['question-header-' + i];
-		inputParentElement.appendChild(label);
+		var pParentElement = document.getElementsByTagName('p');
+		pParentElement[k].appendChild(checkbox);
+		pParentElement[k].appendChild(label);
+
 		k++;
 	}
 }
+
+var button = document.createElement('button');
+button.type = 'button';
+button.classList.add('btn');
+button.classList.add('btn-lg');
