@@ -9,47 +9,62 @@ var test = {
 
 var wrapper = document.createElement('div');
 wrapper.classList.add('wrapper');
+wrapper.style.margin = '0 auto';
+wrapper.style.width = '800px';
+wrapper.style.padding = '0';
+wrapper.style.background = '#fff';
 var elementBody = document.body;
 elementBody.appendChild(wrapper);
 
-var h1 = document.createElement('h1');
-h1.innerHTML = test.header;
+var h3 = document.createElement('h3');
+h3.innerHTML = test.header;
+h3.style.textAlign = 'center';
+h3.style.marginBottom = '60px';
 var parentElement = document.querySelector('.wrapper');
-parentElement.appendChild(h1);
+parentElement.appendChild(h3);
 
 var form = document.createElement('form');
-form.classList.add('question-form');
+form.classList.add('form-group');
 parentElement.appendChild(form);
 var k = 0;
 
 
 for(var i = 0; i < test.question.length; i++){
 	
-	var h3 = document.createElement('h3');
-	h3.innerHTML = i + 1 + '. ' + test.question[i];
-	var formParentElement = document.querySelector('.question-form');
-	formParentElement.appendChild(h3);
+	var ol = document.createElement('ol');
+	ol.innerHTML = i + 1 + '. ' + test.question[i];
+	ol.style.fontSize = '20px';
+	var formParentElement = document.querySelector('.form-group');
+	formParentElement.appendChild(ol);
+
+
 
 	for(var j = 0; j < 3; j++){
+
+		var li = document.createElement('li');
+		li.classList.add = 'answer-list';
+		li.style.listStyle = 'none';
+		li.style.fontSize = '18px';
+		li.style.marginLeft = '20px';
+		var liParentElement = document.getElementsByTagName('ol');
+		liParentElement[i].appendChild(li);
 		
+		var label = document.createElement('label');
+		label.for = 'test.id[k]';
+		label.innerHTML = test.answer[k];
+		label.style.fontWeight = 'normal';
+		label.style.paddingLeft = '7px';
+		label.style.paddingTop = '3px';
+		
+		var labelParentElement = document.getElementsByTagName('li');
+
 		var checkbox = document.createElement('input');
 		checkbox.type = 'checkbox';
 		checkbox.id = 'test.id[k]';
 		checkbox.name = 'test.answerName[k]';
 
-		var p = document.createElement('p');
-		p.classList.add('elementParagraph');
-		var inputParentElement = document.getElementsByTagName('h3');
-		inputParentElement[i].appendChild(p);
-
-		var label = document.createElement('label');
-		label.for = 'test.id[k]';
-		label.innerHTML = test.answer[k];
-
-		var pParentElement = document.getElementsByTagName('p');
-		pParentElement[k].appendChild(checkbox);
-		pParentElement[k].appendChild(label);
-
+		labelParentElement[k].appendChild(checkbox);
+		labelParentElement[k].appendChild(label);
 		k++;
 	}
 }
@@ -57,4 +72,11 @@ for(var i = 0; i < test.question.length; i++){
 var button = document.createElement('button');
 button.type = 'button';
 button.classList.add('btn');
-button.classList.add('btn-lg');
+button.classList.add('btn-default');
+button.innerHTML = test.textButton;
+button.style.margin = '43px auto 50px 240px';
+button.style.padding = '14px 32px';
+button.style.fontSize = '20px';
+button.style.border = '2px solid #000';
+button.style.background = '#cfe2f3';
+parentElement.appendChild(button);
