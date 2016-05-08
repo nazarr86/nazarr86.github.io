@@ -21,6 +21,18 @@
 
 }
 
+@font-face {
+    font-family: 'OpenSans Extrabold';
+    src: url('../fonts/open_sansextrabold-webfont.eot');
+    src: url('../fonts/open_sansextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open_sansextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/open_sansextrabold-webfont.woff') format('woff'),
+         url('../fonts/open_sansextrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -148,11 +160,13 @@
 	text-align: center;
 	margin-top: 122px;
 }
+
 .header-slider__text-title{
 	font-size: 36px;
 	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
 	color: #fefefe;
 }
+
 .header-slider__text-subtitle{
 	padding-left: 20px;
 	font-size: 18px;
@@ -160,6 +174,7 @@
 	color: #edbfff;
 	text-transform: uppercase;
 }
+
 .header-slider__text-content{
 	display: none;
 }
@@ -189,8 +204,11 @@
 .header-slider__nav-link:hover{
 	background-position: 0 -18px; 
 }
+
 /*==========SUB-HEADER==========*/
+
 .sub-header{
+	padding: 68px 0 65px;
 	background: rgba(246,41,12,1);
 	background: -moz-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(116,81,131,1) 0%, rgba(54,41,61,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(116,81,131,1)), color-stop(100%, rgba(54,41,61,1)));
@@ -198,7 +216,9 @@
 	background: -o-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(116,81,131,1) 0%, rgba(54,41,61,1) 100%);
 	background: -ms-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(116,81,131,1) 0%, rgba(54,41,61,1) 100%);
 	background: linear-gradient(to bottom, rgba(246,41,12,1) 0%, rgba(116,81,131,1) 0%, rgba(54,41,61,1) 100%);
+	border-top: 1px solid #000;
 }
+
 .sub-header__box{
 	overflow: hidden;
 	width: 95%;
@@ -207,6 +227,9 @@
 }
 
 .sub-header__title{
+	background: url(../img/icon_sub-header.png) 0 0 no-repeat;
+	margin-left: 30px;
+	padding-left: 40px;
 	font-size: 24px;
 	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
 	color: #fff;
@@ -218,13 +241,16 @@
 	height: 67px;
 	width: 200px;
 	overflow: hidden;
+	margin-left: 70px;
 	font-size: 16px;
 	font-family: 'OpenSans Light', Arial, Tahoma, sans-serif;
 	color: #fff;
 }
 
 .sub-header__link{
-	padding-right: 5px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 22px;
 	font-size: 18px;
 	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
 	color: #fff;
@@ -232,9 +258,157 @@
 	text-decoration: none;
 	float: right;
 }
+
 .sub-header__link:hover{
 	text-shadow: 1px 1px 2px #fff, 0 0 1em #fff;
 }
+
 /*==========CONTENT==========*/
+
+.content{
+	padding: 67px 0 88px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.content-posts__article{
+	width: 217px;
+	background: #fff;
+	margin-left: 35px;
+	padding: 26px 35px 29px 0px;
+}
+
+.content-posts__header{
+	background: url(../img/icon_content_article.png) 0 0 no-repeat;
+	margin-left: -25px;
+	padding-left: 60px;
+}	
+
+.content-posts__author{
+	font-size: 24px;
+	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.content-posts__title{
+	font-size: 24px;
+	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+	color: #edbfff;
+	text-transform: uppercase;
+}
+
+.content-posts-text{
+	height: 152px;
+	overflow: hidden;
+	padding-left: 35px;
+	font-size: 16px;
+	font-family: 'OpenSans Light', Arial, Tahoma, sans-serif;
+	color: #000;
+}
+
+.content-slider__item{
+	position: relative;
+	overflow: hidden;
+	display: table;
+	margin: 20px auto 0;
+	padding-bottom: 50px;
+}
+
+.content-slider__list{
+	float: left;
+	list-style: none;
+	margin: 0 3px;
+}
+
+.content-slider__link{
+	display: block;
+	height: 17px;
+	width: 17px;
+	background: url(../img/icon_content_slider.png) 0 0 no-repeat;
+	transition: 0.2s;
+}
+
+.content-slider__link:hover{
+	background-position: 0 -20px; 
+}
+
+.content-updates__article{
+	margin-bottom: 14px;
+	padding-left: 69px;
+	background: url(../img/icon_content_updates.png) 0 0 no-repeat;
+}
+
+.content-updates{
+	overflow: hidden;
+}
+
+.content-updates__header{
+	margin-bottom: 17px;
+	font-size: 30px;
+	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+	text-transform: uppercase;
+}
+
+.content-updates__title{
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-family: 'OpenSans Extrabold', Arial, Tahoma, sans-serif;
+}
+
+.content-updates__info{
+	font-size: 16px;
+	font-family: 'OpenSans Light', Arial, Tahoma, sans-serif;
+}
+
+.content-updates__more{
+	float: right;
+	margin-right: 37px;
+	font-size: 18px;
+	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+	text-align: right;
+}
+
 /*==========LOGOS==========*/
+
+.logos{
+	background: #f9f9f9;
+	border-top: 1px solid #fefefe;
+	overflow: hidden;
+	padding-bottom: 69px;
+}
+
+.logos__box{
+	float: left;
+	margin-top: 45px;
+	width: 43%;
+	height: 65px;
+	line-height: 65px;
+ 	text-align: center;
+}
+
+.logos__img{
+	vertical-align: middle;
+}
+
 /*==========FOOTER==========*/
+
+.footer{
+	background: url(../img/bg_footer.jpg) 0 0 no-repeat;
+	padding-top: 33px;
+	padding-bottom: 144px;
+	text-align: center;
+}
+
+.footer__copyright{
+	font-size: 12px;
+	font-family: 'OpenSans Light', Arial, Tahoma, sans-serif;
+	color: #fff;
+}
+
+.footer__copyright-company{
+	font-family: 'OpenSans Extrabold', Arial, Tahoma, sans-serif;
+}
