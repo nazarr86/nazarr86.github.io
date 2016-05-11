@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+.wrapper{
+	width: 600px;
+	margin: 50px auto;
+}
+
+.tabs-header__item{
+	list-style: none;
+}
+
+.tabs-header__link{
+	text-decoration: none;
+}
