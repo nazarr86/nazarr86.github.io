@@ -40,13 +40,14 @@
 
 .wrapper{
 	margin: 0 auto;
-	width: 320px;
+	max-width: 320px;
 }
 
 /*==========HEADER==========*/
 .header{
 	background: url(../img/bg_head.jpg) top center no-repeat;
 	padding-top: 70px;
+	position: relative;
 }
 
 .logo{
@@ -159,6 +160,11 @@
 .header-slider{
 	text-align: center;
 	margin-top: 122px;
+	overflow: hidden;
+}
+
+.header-sliedr__text{
+	float: left;
 }
 
 .header-slider__text-title{
@@ -173,6 +179,9 @@
 	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
 	color: #edbfff;
 	text-transform: uppercase;
+}
+.header-slider__img{
+	display: none;
 }
 
 .header-slider__text-content{
@@ -239,7 +248,7 @@
 
 .sub-header__text{
 	height: 67px;
-	width: 200px;
+	width: 74%;
 	overflow: hidden;
 	margin-left: 70px;
 	font-size: 16px;
