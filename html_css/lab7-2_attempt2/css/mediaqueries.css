@@ -48,6 +48,8 @@
 		padding-bottom: 60px;
 	}
 
+/*==========SUB-HEADER 480px==========*/
+
 	.sub-header__box{
 		width: 99%
 	}
@@ -55,6 +57,8 @@
 	.sub-header__text{
 		width: 82%;
 	}
+
+/*==========CONTENT 480px==========*/
 
 	.content-posts__article{
 		width: 79%;
@@ -69,6 +73,8 @@
 		margin-right: 74px;
 	}
 
+/*==========LOGOS 480px==========*/
+
 	.logos{
 		border-bottom: 1px solid #fefefe;
 	}
@@ -76,6 +82,8 @@
 	.logos__box{
 		width: 33%;
 	}
+
+/*==========SUB-CONTENT 480px==========*/	
 
 	.sub-content{
 		display: block;
@@ -110,6 +118,8 @@
 	.sub-content__item{
 		overflow: hidden;
 	}
+
+	/*==========FOOTER 480px==========*/
 
 	.footer-menu{
 		display: block;
@@ -150,10 +160,102 @@
 	}
 }
 
-/*@media screen (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.wrapper{
+		max-width: 768px;
+	}
+/*==========HEADER 768px==========*/
+	.logo{
+		float: left;
+		margin-left: 20px;
+	}
 
+	.header{
+		overflow: hidden;
+	}
+
+	.header-menu-dropdown{
+		display: none;
+	}
+
+	.header-menu-horizontal{
+		display: block;
+	}
+
+	.header-menu-horizontal__list{
+		float: left;
+		list-style: none;
+		margin-right: 5%;
+		padding: 0 5px 5px;
+		border-bottom: 2px solid transparent;
+	}
+
+	.header-menu-horizontal__link{
+		text-decoration: none;
+		font-size: 24px;
+		font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	}
+
+	.header-menu-horizontal__item{
+		position: relative;
+		overflow: hidden;
+		margin-left: 20px;
+		padding-top: 35px;
+		width: 100%;
+	}
+
+	.header-menu-horizontal__list:hover{
+		border-bottom: 2px solid #edbfff;
+	}
+	
+	.header-slider{
+		margin-top: 13px;
+		overflow: hidden;
+		text-align: none;
+	}
+
+	.header__opacity-bg{
+	position: absolute;
+	top:241px;
+	height: 398px;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.2;
+	z-index: 0;
+	}
+
+	.header-slider__img{
+	width: 43%;
+	display: block;
+	float:right;
+	z-index: 10;
+	}
+
+	.header-slider__img-phone{
+		margin-top: 58px;
+	}
+
+	.header-slider__text{
+		display: block;
+		margin-top: 171px;
+		float: left;
+		width:47%;
+	}
+
+	.header-slider__text-subtitle{
+		padding-left: 0;
+	}
+
+	.header-slider__nav-item{
+		margin-top: 119px;
+		padding-bottom: 60px;
+	}
+
+	/*==========SUB-HEADER 768px==========*/
 }
-
+/*
 @media screen (min-width: 768px) and (max-width: 960px) {
-
-}*/
+*/

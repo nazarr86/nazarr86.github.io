@@ -58,9 +58,13 @@
 	background: url(../img/logo_header.png) 0 0 no-repeat;
 }
 
-.header-menu{
+.header-menu-dropdown{
 	margin-top: 38px;
 	text-align: center;
+}
+
+.header-menu-horizontal{
+	display: none;
 }
 
 .header-menu-dropdown__active{
