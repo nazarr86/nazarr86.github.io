@@ -1,6 +1,6 @@
-@media screen and (min-width: 321px) and (max-width: 480px){
+@media (min-width:480px) and (max-width:767px){
 	.wrapper{
-		max-width:480px; 
+		min-width:480px; 
 	}
 /*==========HEADER 480px==========*/
 	.header{
@@ -160,12 +160,12 @@
 	}
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/*@media screen and (min-width: 481px) and (max-width: 768px) {
 	.wrapper{
 		max-width: 768px;
-	}
+	}*/
 /*==========HEADER 768px==========*/
-	.logo{
+	/*.logo{
 		float: left;
 		margin-left: 20px;
 	}
@@ -253,9 +253,136 @@
 		margin-top: 119px;
 		padding-bottom: 60px;
 	}
-
+*/
 	/*==========SUB-HEADER 768px==========*/
-}
+
+	/*.sub-header__box{
+		width: 28%;
+		margin-right: 11px;
+	}
+
+	.sub-header__text{
+		width: 82%;
+		height: 136px;
+	}
+	
+	.sub-header__link{
+		padding-right: 0px;
+	}*/
+
+	/*==========CONTENT 768px==========*/
+/*	.content{
+		padding-top: 98px;
+		padding-bottom: 70px;
+	}
+
+	.content-posts{
+		width: 44%;
+		float: left;
+		margin-left: 20px;	
+	}
+
+	.content-updates{
+		width: 44%;
+		float: right;
+		margin-right: 20px;
+	}
+
+	.content{
+		overflow: hidden;
+	}
+*/
+	/*==========LOGOS 768px==========*/
+
+/*	.logos{
+		border-bottom: 1px solid #fefefe;
+	}
+
+	.logos__box{
+		width: 15%;
+	}*/
+
+	/*==========SUB-CONTENT 768px==========*/	
+/*
+	.sub-content{
+		display: block;
+		padding-top: 80px;
+		border-top: 1px solid #d8d8d8;
+		background: #ececec;
+	}
+
+	.sub-content__article{
+		float: left;
+		width: 28%;
+		margin: 0 20px 57px;
+	}
+
+	.sub-content__header{
+		padding-bottom: 16px;
+		font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+		font-size: 24px;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 0px rgba(255,255,255,0.9);
+	}
+
+	.sub-content__text{
+		height: 158px;
+		overflow: hidden;
+		font-family: 'OpenSans Light', Arial, Tahoma, sans-serif;
+		font-size: 16px;
+		color: #787878;
+		text-shadow: 1px 1px 0px rgba(255,255,255,0.9);
+	}
+
+	.sub-content__item{
+		overflow: hidden;
+	}*/
+
+	/*==========FOOTER 768px==========*/
+
+/*	.footer-menu{
+		display: block;
+	}
+
+	.footer-menu__item{
+		min-width: 321px;
+		position: relative;
+		overflow: hidden;
+		padding: 0 4% 34px;
+	}
+
+	.footer-menu__list{
+		float: left;
+		list-style: none;
+		padding-right: 5%;
+		display: inline-block;
+	}
+	
+	.footer-menu__list:last-child{
+		padding-right: 0;
+	}
+
+	.footer-menu__link{
+		text-decoration: none;
+		font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+		font-size: 20px;
+		color: #fff;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+		text-transform: uppercase;
+		display: inline-block;
+
+	}
+
+	.footer{
+		padding-top: 44px;
+		padding-bottom: 80px;
+	}
+
+	.footer__copyright{
+		text-align: right;
+		padding-right: 20px;
+	}
+}*/
 /*
 @media screen (min-width: 768px) and (max-width: 960px) {
 */
