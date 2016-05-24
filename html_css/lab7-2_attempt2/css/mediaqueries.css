@@ -293,6 +293,10 @@
 		overflow: hidden;
 	}
 
+	.content-updates__header{
+		margin-top: 23px;
+	}
+
 	/*==========LOGOS 768px==========*/
 
 	.logos{
@@ -340,7 +344,7 @@
 		overflow: hidden;
 	}
 
-	/*==========SUB-CONTENT 480px==========*/	
+	/*==========SUB-CONTENT 768px==========*/
 
 	.sub-content{
 		display: block;
@@ -353,7 +357,7 @@
 	.sub-content__article{
 		float: left;
 		width: 29%;
-		margin: 0 20px 20px;
+		margin: 0 2% 2%;
 	}
 
 	.sub-content__header{
@@ -422,6 +426,208 @@
 		padding-right: 20px;
 	}
 }
-/*
-@media screen (min-width: 768px) and (max-width: 960px) {
-*/
+
+@media (min-width: 960px) {
+	.wrapper{
+		max-width: 960px;
+	}
+
+	.logo{
+		float: left;
+		margin-left: 20px;
+	}
+
+	.header-menu-dropdown{
+	display: none;
+	}
+
+	.header-menu-horizontal{
+	display: block;
+	float: right;
+	width: 65%;
+	}
+
+	.wrapper-header{
+		overflow: hidden;
+	}
+
+	.header-menu-horizontal__list{
+		float: left;
+		list-style: none;
+		margin-right: 5%;
+		padding: 0 5px 5px;
+		border-bottom: 2px solid transparent;
+	}
+
+	.header-menu-horizontal__link{
+		text-decoration: none;
+		font-size: 24px;
+		font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	}
+
+	.header-menu-horizontal__item{
+		position: relative;
+		overflow: hidden;
+		margin-left: 20px;
+		/*padding-top: 35px;*/
+		width: 100%;
+	}
+
+	.header-menu-horizontal__list:hover{
+		border-bottom: 2px solid #edbfff;
+	}
+
+	/*.header-slider{*/
+		/*margin-top: 13px;*/
+		/*overflow: hidden;*/
+		/*text-align: none;*/
+	/*}*/
+
+	/*.header__opacity-bg{*/
+		/*position: absolute;*/
+		/*top:241px;*/
+		/*height: 398px;*/
+		/*width: 100%;*/
+		/*background-color: #000;*/
+		/*opacity: 0.2;*/
+		/*z-index: 0;*/
+	/*}*/
+
+	/*.header-slider__img{*/
+		/*width: 43%;*/
+		/*display: block;*/
+		/*float:right;*/
+		/*z-index: 10;*/
+	/*}*/
+
+	/*.header-slider__img-phone{*/
+		/*margin-top: 58px;*/
+	/*}*/
+
+	/*.header-slider__text{*/
+		/*display: block;*/
+		/*margin-top: 171px;*/
+		/*float: left;*/
+		/*width:47%;*/
+	/*}*/
+
+	/*.header-slider__text-subtitle{*/
+		/*padding-left: 0;*/
+	/*}*/
+
+	/*.header-slider__nav-item{*/
+		/*margin-top: 119px;*/
+		/*padding-bottom: 60px;*/
+	/*}*/
+
+	/*==========SUB-HEADER 960px==========*/
+
+	.sub-header__box{
+		width: 31%;
+		margin-right: 11px;
+	}
+
+	.sub-header__text{
+		width: 82%;
+		height: 136px;
+	}
+
+	.sub-header__link{
+		padding-right: 0px;
+	}
+
+	/*==========CONTENT 960px==========*/
+	.content{
+		padding-top: 98px;
+		padding-bottom: 70px;
+	}
+
+	.content-posts{
+		width: 44%;
+		float: left;
+		margin-left: 20px;
+	}
+
+	.content-updates{
+		width: 47%;
+		float: left;
+		margin-left: 48px;
+	}
+
+	.content{
+		overflow: hidden;
+	}
+
+	.content-posts__article {
+		width: 82%;
+	}
+
+	.content-updates__header{
+		margin-top: 23px;
+	}
+
+	/*==========LOGOS 960px==========*/
+
+	.logos{
+		border-bottom: 1px solid #fefefe;
+	}
+
+	.logos__container{
+		margin-left: 92px;
+	}
+
+	.logos__box{
+		width: 15%;
+		margin-right: 1%;
+	}
+
+	/*==========FOOTER 768px==========*/
+
+	.footer-menu{
+		display: block;
+		float: left;
+	}
+
+	.footer-menu__item{
+		min-width: 321px;
+		position: relative;
+		overflow: hidden;
+		padding: 0 4% 34px;
+	}
+
+	.footer-menu__list{
+		float: left;
+		list-style: none;
+		padding-right: 5%;
+		display: inline-block;
+	}
+
+	.footer-menu__list:last-child{
+		padding-right: 0;
+	}
+
+	.footer-menu__link{
+		text-decoration: none;
+		font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
+		font-size: 20px;
+		color: #fff;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+		text-transform: uppercase;
+		display: inline-block;
+	}
+
+	.footer__copyright{
+		float: right;
+		text-align: right;
+		padding-right: 20px;
+	}
+
+	.footer{
+		padding-top: 44px;
+		padding-bottom: 80px;
+		overflow: hidden;
+	}
+}
