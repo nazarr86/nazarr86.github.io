@@ -155,47 +155,68 @@
 	border-bottom-left-radius:15px;
 	border: 1px solid #000;
 }
+
 .header-menu-dropdown__submenu-item:hover{
 	background-color: rgba(47, 38, 52, 0.7);
 	border-bottom: 2px solid #edbfff;
 	transition: all 0.2s;
 }
 
-.header-slider{
-	text-align: center;
-	margin-top: 122px;
-	overflow: hidden;
+.header-slider {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  height: 245px;
 }
 
-.header-sliedr__text{
-	float: left;
+.slider {
+  padding-top: 25px;
+  /*min-width: 960px;*/
 }
 
-.header-slider__text-title{
-	font-size: 36px;
-	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
-	color: #fefefe;
+.header-slider__text {
+  margin: 0 auto;
+  padding-left: 15px;
+  width: 64%;
 }
 
-.header-slider__text-subtitle{
-	padding-left: 20px;
-	font-size: 18px;
-	font-family: 'League Gothic Regular', Arial, Tahoma, sans-serif;
-	color: #edbfff;
-	text-transform: uppercase;
-}
-.header-slider__img{
-	display: none;
+.header-slider__text-title {
+  font-family: "League Gothic Regular", Arial, sans-serif;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #fefefe;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
 }
 
-.header-slider__text-content{
-	display: none;
+.header-slider__text-second {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #edbfff;
+  letter-spacing: 0.0px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.header-slider__text-content {
+  display: none;
+  font-family: "OpenSans Light", Arial, sans-serif;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.05px;
+}
+
+.header-slider__img {
+  display: none;
 }
 
 .header-slider__nav-item{
 	position: relative;
 	overflow: hidden;
-	display: inline-block;
+	display: table;
 	margin: 78px auto 0;
 	padding-bottom: 66px;
 }
@@ -421,7 +442,9 @@
 .sub-content{
 	display: none;
 }
-
+.sub-content__bonus{
+	display: none;
+}
 /*==========FOOTER==========*/
 
 .footer{
