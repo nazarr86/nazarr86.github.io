@@ -475,7 +475,6 @@
 		position: relative;
 		overflow: hidden;
 		margin-left: 20px;
-		/*padding-top: 35px;*/
 		width: 100%;
 	}
 
@@ -491,10 +490,15 @@
 	    width: 100%;
 	    background: rgba(0, 0, 0, 0.2);
 	    height: 400px;
-	    margin-top: 166px;
+	    margin-top: 174px;
+	    position: absolute;
+	    left:0;
+	    top: 100px;
+
 	}
 
 	.slider {
+		max-width: 960px;
 	    margin: 0 auto;
 	    padding-top: 0;
 	}
@@ -536,16 +540,28 @@
 	.header-slider__nav-item{
 		float: right;
 		clear: right;
-		margin-top: 92px;
+		margin-top: 661px;
 		padding-bottom: 58px;
-		padding-right: 16%;
+		padding-right: 17%;
 	}
 
 	/*==========SUB-HEADER 960px==========*/
+	
+	.sub-header{
+		padding-bottom: 42px;
+	}
 
 	.sub-header__box{
-		width: 31%;
-		margin-right: 11px;
+		width: 30%;
+		margin-left: 44px;
+	}
+
+	.sub-header__box:first-child{
+		margin-left: 0;
+	}
+	.sub-header__title{
+		font-size: 30px;
+		margin-bottom: 8px;
 	}
 	
 	.sub-header__title--talks{
@@ -558,11 +574,12 @@
 
 	.sub-header__text{
 		width: 82%;
-		height: 136px;
+		height: 114px;
+		line-height: 1.45;
 	}
 
 	.sub-header__link{
-		padding-right: 0px;
+		padding-right: 5px;
 	}
 
 	/*==========CONTENT 960px==========*/
@@ -577,22 +594,54 @@
 		margin-left: 20px;
 	}
 
+	.content-posts__header{
+		padding-bottom: 10px;
+	}
+
+	.content-posts__author{
+		font-size: 30px;
+		display: inline;
+	}
+
+	.content-posts__article {
+		width: 93%;
+		margin-left: 4px;
+		padding-top: 24px;
+	}
+	
+
+	.content-posts__title{
+		font-size: 30px;
+		display: inline;
+	}
+
+	.content-posts-text {
+    	height: 163px;
+    	line-height: 1.5;
+    }
+
 	.content-updates{
 		width: 47%;
 		float: left;
-		margin-left: 48px;
+		margin-left: 66px;
 	}
 
 	.content{
 		overflow: hidden;
 	}
 
-	.content-posts__article {
-		width: 82%;
-	}
 
 	.content-updates__header{
 		margin-top: 23px;
+		margin-bottom: 13px;
+	}
+
+	.content-updates__title{
+		margin-bottom: 3px;
+	}
+
+	.content-updates__article{
+		margin-bottom: 18px;
 	}
 
 	/*==========LOGOS 960px==========*/
