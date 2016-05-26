@@ -779,7 +779,7 @@
 	}
 
 	.footer-menu__item{
-		min-width: 321px;
+		min-width: 70%;
 		position: relative;
 		overflow: hidden;
 		padding: 0 0 34px 0;
