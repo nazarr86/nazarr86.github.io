@@ -582,7 +582,7 @@
 
 	.sub-header__text{
 		width: 82%;
-		height: 114px;
+		height: 121px;
 		line-height: 1.55;
 	}
 
@@ -625,7 +625,7 @@
 	}
 
 	.content-posts-text {
-    	height: 163px;
+    	height: 170px;
     	line-height: 1.55;
     }
 
@@ -757,7 +757,7 @@
 	}
 
 	.sub-content__text{
-		height: 165px;
+		height: 171px;
 		overflow: hidden;
 		font-family: 'OpenSans Light', Arial, Tahoma, sans-serif;
 		font-size: 16px;
@@ -776,10 +776,10 @@
 	.footer-menu{
 		display: block;
 		float: left;
+		width: 57%;
 	}
 
 	.footer-menu__item{
-		min-width: 70%;
 		position: relative;
 		overflow: hidden;
 		padding: 0 0 34px 0;
