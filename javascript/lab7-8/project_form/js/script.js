@@ -1,10 +1,16 @@
 $(function(){
-    var $fields = $(':input');
+    $(':input').hover(
+        function(){
+           $(this).siblings('span').show();
+        },
+        function(){
+            $(this).siblings('span').hide();
+        }
+    );
 
-    $fields.on('focus', function(){
-        var $tips = $(this).siblings('span');
-        console.log($tips);
-        $tips.toggle();
-    });
+    var $button = $('button');
+    $button.on('click', function(e){
+        e.preventDefault();
+        var $helps = $('span').slideToggle();
+    })
 });
-

@@ -3,6 +3,33 @@
     padding: 0;
 }
 
+.fields{
+    padding: 10px;
+}
+
+label {
+    line-height: 25px;
+}
+
+input{
+    line-height:25px;
+}
+
+fieldset{
+    height: 300px;
+}
+
 span{
     display: none;
+    border: 1px solid #aaa;
+    -webkit-box-shadow: 2px 2px 5px 3px rgba(170,170,170,1);
+    -moz-box-shadow: 2px 2px 5px 3px rgba(170,170,170,1);
+    box-shadow: 2px 2px 5px 3px rgba(170,170,170,1);
+}
+
+button{
+    width: 75px;
+    height:25px;
+    border-radius: 5px;
+    background-color: #eee;
 }
