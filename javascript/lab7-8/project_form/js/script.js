@@ -11,6 +11,6 @@ $(function(){
     var $button = $('button');
     $button.on('click', function(e){
         e.preventDefault();
-        var $helps = $('span').slideToggle();
+        var $helps = $('span').toggle();
     })
 });
