@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans Light';
+    src: url('../fonts/open-sans.light-webfont.eot');
+    src: url('../fonts/open-sans.light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans.light-webfont.woff2') format('woff2'),
+         url('../fonts/open-sans.light-webfont.woff') format('woff'),
+         url('../fonts/open-sans.light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans Extrabold';
+    src: url('../fonts/open_sansextrabold-webfont.eot');
+    src: url('../fonts/open_sansextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open_sansextrabold-webfont.woff2') format('woff2'),
+         url('../fonts/open_sansextrabold-webfont.woff') format('woff'),
+         url('../fonts/open_sansextrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+        margin: 0 auto;
+        max-width: 960px;
+}
+
+/*==========HEADER==========*/
+.header{
+    background: url(../img/bg_head.jpg) top center no-repeat;
+    padding-top: 70px;
+    position: relative;
+}
+
+.logo{
+    float: left;   
+}
+
+.header-menu-dropdown{
+    display: none;
+}
+
+.header-menu-horizontal{
+   display: block;
+   float: right;
+   width: 68%;
+}
