@@ -498,7 +498,6 @@
 	    position: absolute;
 	    left:0;
 	    top: 100px;
-
 	}
 
 	.slider {
@@ -784,8 +783,6 @@
 		overflow: hidden;
 		padding: 0 0 34px 0;
 	}
-
-
 
 	.footer-menu__list{
 		float: left;
