@@ -34,3 +34,5 @@
             .jcarouselPagination();
     });
 })(jQuery);
+
+$(function(){ $("select").uniform(); });
