@@ -122,6 +122,7 @@
 }
 
 /*SELECT*/
+
 .selector-title{
     text-transform: uppercase;
     text-align: center;
@@ -129,4 +130,27 @@
 
 .selector-items{
     text-align: center;
+}
+
+/*CHECKBOX JQ*/
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    overflow: hidden;
+}
+
+.niceChecked {
+    background-position: 0 -17px;
+}
+
+.niceCheck input {
+    margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+
+.niceCheckDisabled {
+    background-image: url(../img/checkbox-disabled.png);
 }
