@@ -141,6 +141,7 @@
     cursor: pointer;
     background: url(../img/checkbox.png);
     overflow: hidden;
+    margin-left:5px;
 }
 
 .niceChecked {
@@ -153,4 +154,51 @@
 
 .niceCheckDisabled {
     background-image: url(../img/checkbox-disabled.png);
+}
+
+.niceCheckHidden{
+    display: none;
+}
+
+/*CHECKBOX CSS*/
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.label-css {
+    cursor: pointer;
+}
+.label-css:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+input[type=checkbox]:checked + .label-css:after {
+    background-position: 0 -17px;
+}
+.label-css:hover:after {
+    background-position: 0 -34px;
+}
+input[type=checkbox]:checked + .label-css:hover:after {
+    background-position: 0 -51px;
+}
+
+.form-elements1,
+.form-elements2,
+.form-elements3{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.form-elements{
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto;
 }
