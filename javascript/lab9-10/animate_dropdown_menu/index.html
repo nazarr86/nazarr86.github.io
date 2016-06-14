@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <title>Animate dropdown menu</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
-    <nav class="nav">
+    <nav>
+    <div class="container">
         <ul class="menu">
-            <li class='menu-list'><a href="#">menu 1</a></li>
-            <li class='menu-list'><a href="#">menu 2</a></li>
-            <li class='menu-list'><a href="#">menu 3 &nbsp;</a>
-                <ul class="sub-menu">
-                    <li><a href="#">menu 3.1</a></li>
-                    <li><a href="#">menu 3.2</a></li>
-                    <li><a href="#">menu 3.3 &nbsp;</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">menu 3.3.1</a></li>
-                            <li><a href="#">menu 3.3.2</a></li>
-                            <li><a href="#">menu 3.3.3</a></li>
-                            <li><a href="#">menu 3.3.4</a></li>
-                            <li><a href="#">menu 3.3.5</a></li>
-                            <li><a href="#">menu 3.3.6</a></li>
+            <li class="menu--item"><a href="#">Menu 1</a></li>
+            <li class="menu--item">
+                <a href="#">Menu 2</a>
+                <ul class="submenu">
+                    <li class="submenu--item"><a href="#">submenu 1</a></li>
+                    <li class="submenu--item"><a href="#">submenu 2</a></li>
+                    <li class="submenu--item">
+                        <a href="#">submenu 3</a>
+                        <ul class="submenu2">
+                            <li class="submenu2--item"><a href="#">submenu 1</a></li>
+                            <li class="submenu2--item"><a href="#">submenu 2</a></li>
+                            <li class="submenu2--item"><a href="#">submenu 3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">menu 3.4</a></li>
-                    <li><a href="#">menu 3.5</a></li>
-                    <li><a href="#">menu 3.6</a></li>
+                    <li class="submenu--item"><a href="#">submenu 4</a></li>
                 </ul>
             </li>
-            <li class='menu-list'><a href="#">menu 4</a></li>
-            <li class='menu-list'><a href="#">menu 5</a></li>
-            <li class='menu-list'><a href="#">menu 6</a></li>
+            <li class="menu--item"><a href="#">Menu 3</a></li>
+            <li class="menu--item">
+                <a href="#">Menu 4</a>
+                <ul class="submenu">
+                    <li class="submenu--item">
+                        <a href="#">submenu 1</a>
+                        <ul class="submenu2">
+                            <li class="submenu2--item"><a href="#">submenu 1</a></li>
+                            <li class="submenu2--item"><a href="#">submenu 2</a></li>
+                            <li class="submenu2--item"><a href="#">submenu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu--item"><a href="#">submenu 2</a></li>
+                    <li class="submenu--item"><a href="#">submenu 3</a></li>
+                    <li class="submenu--item"><a href="#">submenu 4</a></li>
+                </ul>
+            </li>
+            <li class="menu--item"><a href="#">Menu 5</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
 </body>
 </html>
