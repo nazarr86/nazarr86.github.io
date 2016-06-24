@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Lab11-12</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.carousel.js"></script>
@@ -28,7 +28,6 @@
     </div>
 
     <div class="shablon-wrapper">
-        <h2></h2>
         <script type="text/html" id="shablon">
             <h3><%= car_model %></h3>
             <img src="<%= capture.src%>" alt="<%= capture.alt%>">
@@ -41,6 +40,16 @@
                 <li><%= car_advantages[i] %></li>
                 <% } %>
             </ul>
+            <hr>
+
+            <p><%= car_seller_telephone %></p>
+            <p><%= car_seller_number %></p>
+            <p></p>
+            <p><%= car_seller_address %></p>
+            <p><a href="<%= car_seller_site %>"><%= car_seller_site %></a></p>
+            <hr>
+            <p><%= feedback %></p>
+            <p><%= feedback_text %></p>
         </script>
     </div>
 </body>

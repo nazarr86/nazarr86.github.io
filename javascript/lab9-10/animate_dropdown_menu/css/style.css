@@ -51,6 +51,16 @@ body {
     z-index: 2;
 }
 
+.submenu2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    width: 120px;
+    background-color: #0c7e40;
+    z-index: 2;
+}
+
 .submenu--item,
 .submenu2--item {
     position: relative;
@@ -62,14 +72,4 @@ body {
 .submenu--item:hover,
 .submenu2--item:hover {
     background-color: #e5d9c9;
-}
-
-.submenu2 {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: -120px;
-    width: 120px;
-    background-color: #0c7e40;
-    z-index: 2;
 }
