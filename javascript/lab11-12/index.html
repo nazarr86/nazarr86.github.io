@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="carousel-wrapper">
+        <div class="carousel-arrow-left"><span>Влево</span></div>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <li class="carousel-element"><img src="img/peugeot-308-gti.jpg"><p>Peugeot 308 GTI</p></li>
+                <li class="carousel-element"><img src="img/aston-martin-dbc-concept-.jpg"><p>Aston Martin DBC Concept</p></li>
+                <li class="carousel-element"><img src="img/ferrari-488-gtb.jpg"><p>Ferrari 488 GTB</p></li>
+                <li class="carousel-element"><img src="img/lexus-rc-f.jpg"><p>Lexus RC F</p></li>
+                <li class="carousel-element"><img src="img/audi-r8.jpg"><p>Audi R8</p></li>
+                <li class="carousel-element"><img src="img/mercedes-amg-sls63-.jpg"><p>Mercedes AMG SLS63</p></li>
+                <li class="carousel-element"><img src="img/lotus-evora-sport-410.jpg"><p>Lotus Evora Sport 410</p></li>
+                <li class="carousel-element"><img src="img/maserati-granturismo-mc-stradale.jpg"><p>Maserati GranTurismo MC</p></li>
+            </ul>
+        </div>
+        <div class="carousel-arrow-right"><span>Вправо</span></div>
+    </div>
+
+    <div class="shablon-wrapper">
+        <h2></h2>
+        <script type="text/html" id="shablon">
+            <h3><%= car_model %></h3>
+            <img src="<%= capture.src%>" alt="<%= capture.alt%>">
+            <p><%= car_discription %></p>
+            <hr>
+            <p><%= car_plus %></p>
+
+            <ul>
+                <% for (var i = 0; i < car_advantages.length; i++) { %>
+                <li><%= car_advantages[i] %></li>
+                <% } %>
+            </ul>
+        </script>
+    </div>
+</body>
+</html>
