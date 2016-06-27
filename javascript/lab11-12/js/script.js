@@ -24,6 +24,6 @@ $(function () {
     }
 
     var content = tmpl(html, data);
-    $('body').append('<h2>JavaScript Templating by John Resig</h2>')
+    $('body').append('<h2 class="header-title">JavaScript Templating by John Resig</h2>')
     $('body').append(content);
 });

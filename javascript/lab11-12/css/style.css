@@ -6,11 +6,12 @@
 body{
     width: 100%;
     background: #D3D3D3;
+    font-family: Tahoma sans-serif;
 }
 
 .carousel-wrapper{
     width: 960px;
-    margin: 0 auto;
+    margin: 20px auto;
     overflow: hidden;
 }
 
@@ -34,7 +35,6 @@ body{
 
 .carousel-element p{
     text-align: center;
-    font-family: ;
 }
 
 .carousel-hider {
@@ -66,17 +66,50 @@ body{
 }
 
 /*JavaScript Templating*/
-.shablon-wrapper{
-    width: 960px;
+
+.profile-wrapper{
+    width: 50%;
     margin: 0 auto;
-    background: green;
+}
+
+.profile-wrapper div{
+    margin-left: 30px;
+}
+
+.profile-wrapper p{
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+.header-title{
+    padding: 10px 0;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding: 25px 0;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.content-header{
+    padding-bottom: 30px;
+}
+
+ul{
+    margin-left: 25px;
+    font-size: 18px;
 }
 
 hr{
+    margin: 20px 0;
     height: 3px;
-    width: 70%;
-    color: grey;
-    background-color: grey;
+    color: slategray;
+    background-color: slategray;
     border: none;
-
 }

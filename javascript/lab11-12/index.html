@@ -26,31 +26,39 @@
         </div>
         <div class="carousel-arrow-right"><span>Вправо</span></div>
     </div>
-
-    <div class="shablon-wrapper">
+    <section class="profile">
         <script type="text/html" id="shablon">
-            <h3><%= car_model %></h3>
-            <img src="<%= capture.src%>" alt="<%= capture.alt%>">
-            <p><%= car_discription %></p>
-            <hr>
-            <p><%= car_plus %></p>
+            <div class="profile-wrapper">
+                <div class="header">
+                    <h3><%= car_model %></h3>
+                    <img src="<%= capture.src%>" alt="<%= capture.alt%>">
+                    <p><%= car_discription %></p>
+                </div>
+                <hr>
+                <div class="content">
+                    <p class="content-header"><%= car_plus %></p>
 
-            <ul>
-                <% for (var i = 0; i < car_advantages.length; i++) { %>
-                <li><%= car_advantages[i] %></li>
-                <% } %>
-            </ul>
-            <hr>
-
-            <p><%= car_seller_telephone %></p>
-            <p><%= car_seller_number %></p>
-            <p></p>
-            <p><%= car_seller_address %></p>
-            <p><a href="<%= car_seller_site %>"><%= car_seller_site %></a></p>
-            <hr>
-            <p><%= feedback %></p>
-            <p><%= feedback_text %></p>
+                    <ul>
+                        <% for (var i = 0; i < car_advantages.length; i++) { %>
+                        <li><%= car_advantages[i] %></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <hr>
+                <div class="contact">
+                    <p><%= car_seller_telephone %></p>
+                    <p><%= car_seller_number %></p>
+                    <p></p>
+                    <p><%= car_seller_address %></p>
+                    <p><a href="<%= car_seller_site %>"><%= car_seller_site %></a></p>
+                </div>
+                <hr>
+                <div class="footer">
+                    <p><%= feedback %></p>
+                    <p><%= feedback_text %></p>
+                </div>
+            </div>
         </script>
-    </div>
+    </section>
 </body>
 </html>
