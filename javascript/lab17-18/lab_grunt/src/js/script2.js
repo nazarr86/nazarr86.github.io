@@ -1,0 +1,1 @@
+console.log('This is file script2.js');
