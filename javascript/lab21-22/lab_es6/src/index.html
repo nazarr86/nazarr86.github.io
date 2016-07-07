@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 21-22</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <script type="text/html" id="test">
+        <h1><%= testHeader %></h1>
+        <form action="#" method="post">
+            <% for (var i = 0; i < testQuestions.length; i++) { %>
+            <div>
+                <p><%= (i+1) + '. ' + testQuestions[i].questionNumber %></p>
+                <% for (var j = 0; j < testQuestions[i].answers.length; j++) { %>
+                <div>
+                    <input type="radio"
+                           name="<%= testQuestions[i].radioNumber %>"
+                           id="<%= testQuestions[i].id[j] %>"/>
+                    <label for="<%= testQuestions[i].id[j] %>">
+                        <%= testQuestions[i].answers[j] %></label>
+                </div>
+                <% }; %>
+            </div>
+            <% }; %>
+            <button><%= submit %></button>
+        </form>
+    </script>
+</div>
+</body>
+</html>
