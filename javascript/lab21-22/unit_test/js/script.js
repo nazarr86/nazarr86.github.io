@@ -1,6 +1,6 @@
-let power = {
+var power = {
     pow: function pow(x, num){
-        let powResult = 1;
+        var powResult = 1;
         if(x == 0){
             return 1;
         }
@@ -8,7 +8,7 @@ let power = {
             return num;
         }
         else{
-            for(let i = 1; i <= x; i++){
+            for(var i = 1; i <= x; i++){
                 powResult *= num;
             }
             return powResult;

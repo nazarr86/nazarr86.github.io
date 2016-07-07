@@ -1,4 +1,4 @@
-var power = require('../dist/js/script.min.js');
+var power = require('../js/script.js');
 
 describe("Power", function() {
     it("works correctly", function() {
