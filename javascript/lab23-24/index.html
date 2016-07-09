@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 23-24</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script data-main="js/app" src="js/require.js"></script>
+</head>
+<body>
+    <script type="text/tmpl" id ="wrapper__template">
+        <div class="wrapper">
+            <ul class="item__list"></ul>
+            <div class="controlls">
+                <input type="text" class="item__value"/>
+                <button class="item__add">Add</button>
+            </div>
+        </div>
+    </script>
+    <script type ="text/template" id="list__template">
+        <% for( var i = 0; i < data.length; i++) { %>
+        <li class="list__item"><%= data[i] %>
+            <button data-value="<%= data[i] %>" class="item__edit">Edit</button>
+            <button data-value="<%= data[i] %>" class="item__del"> Del</button>
+        </li><% }; %>
+    </script>
+</body>
+</html>
