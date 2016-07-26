@@ -1,0 +1,67 @@
+/*BEGIN HEADER*/
+
+.header {
+  min-height: 442px;
+  min-width: 320px;
+  padding: 32px 20px 67px 20px;
+  background: #cccccc url(../img/bg_header.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.login {
+  width: 165px;
+  margin: 0 auto;
+
+  &__link {
+    font: 14px $MontserratBold;
+    color: #fff;
+    float: left;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 8px 15px;
+
+
+    &:hover {
+      border: 2px solid #fff;
+      border-radius: 20px;
+
+    }
+  }
+}
+
+.logo {
+  margin-top: 116px;
+
+  a {
+    font: 20px $MontserratBold;
+    color: #fff;
+  }
+}
+
+.header__title {
+  margin-top: 29px;
+  font: 29px $MontserratBold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header__description {
+  max-width: 220px;
+  margin: 8px auto 0;
+  font: 18px $Roboto;
+  color: #fff;
+}
+
+.header .btn-search-partner {
+  @extend %btn-partner;
+  margin-top: 12px;
+
+  &:hover {
+    background: $btn-bg-hover;
+  }
+}
+/*END HEADER*/
+
+/*BEGIN HOW*/
+/*END HOW*/
