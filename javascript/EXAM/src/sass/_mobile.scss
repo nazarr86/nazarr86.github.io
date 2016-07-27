@@ -61,9 +61,11 @@
     background: $btn-bg-hover;
   }
 }
+
 /*END HEADER*/
 
 /*BEGIN HOW*/
+
 .container {
   padding: 34px 10px 0 10px;
   text-align: center;
@@ -125,9 +127,11 @@
     background: #ccc url(../img/step-3.jpg) 0 0 no-repeat;
   }
 }
+
 /*END HOW*/
 
 /*BEGIN PARTNER*/
+
 .partner {
   padding-top: 39px;
 }
@@ -197,10 +201,129 @@
   margin: -4px auto;
   font: 14px $MontserratBold;
   color: #ff4e50;
+
   &:hover {
     border: 2px solid $btn-bg-hover;
     background: $btn-bg-hover;
     color: #fff;
   }
 }
+
 /*END PARTNER*/
+
+/*BEGIN IDEAS*/
+
+.ideas{
+  margin-top: 37px;
+}
+
+.ideas h2 {
+  margin: 27px 0 8px 0;
+}
+
+.tile {
+  margin: 5px 0;
+  position: relative;
+
+  &__tag {
+    font: 22px $MontserratBold;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.form-search-partner {
+  margin-top: 7px;
+
+  &__title {
+    font: 18px $Roboto;
+    color: #333;
+  }
+
+  &__field {
+    width: 280px - 15px - 15px;
+    margin-top: 16px;
+    padding: 9px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: 14px $Roboto;
+    color: #999;
+  }
+
+  &__btn {
+    @extend %btn-partner;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: $btn-bg-hover;
+    }
+  }
+}
+
+/*END IDEAS*/
+
+/*BEGIN FOOTER*/
+
+.footer {
+  padding: 16px 10px 17px 10px;
+  border-top: 4px solid #ff4e50;
+  margin-top: 41px;
+  text-align: center;
+
+  .logo-footer a {
+    font: 16px $MontserratBold;
+    color: #ff4e50;
+  }
+
+  .company, .partners {
+    margin-top: 12px;
+    font: 14px $MontserratBold;
+    color: #333;
+  }
+}
+
+.developer {
+  margin-top: 15px;
+
+  &__designed {
+    font: 10px $MontserratBold;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__logo {
+    margin-top: 10px;
+  }
+}
+
+.nav {
+  width: 210px;
+  margin: 0 auto;
+
+  &__item {
+    margin-left: 13px;
+    float: left;
+  }
+
+  &__link {
+    font: 14px $Roboto;
+    color: #666;
+
+    &:hover {
+      color: $btn-bg-hover;
+    }
+  }
+}
+
+/*END FOOTER*/

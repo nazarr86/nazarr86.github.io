@@ -1,0 +1,83 @@
+@media (min-width: 977px) {
+
+  /*BEGIN HEADER*/
+
+  .header {
+    padding: 50px 0 212px 0;
+
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .header .container,
+  .container {
+    max-width: 960px - 10px - 10px;
+    margin: 0 auto;
+  }
+
+  /*END HEADER*/
+
+  /*BEGIN HOW*/
+
+  .step {
+    width: 301px - 19px - 19px;
+    height: 416px - 230px - 20px;
+    padding-top: 230px;
+
+    &--bg1 {
+      background: #ccc url(../img/step-1-lg.jpg) 0 0 no-repeat;
+    }
+
+    &--bg2-and-padding-and-margin {
+      height: 416px - 259px - 20px;
+      padding-top: 259px;
+      background: #ccc url(../img/step-2-lg.jpg) 0 0 no-repeat;
+    }
+
+    &--bg3 {
+      background: #ccc url(../img/step-3-lg.jpg) 0 0 no-repeat;
+    }
+  }
+
+  /*END HOW*/
+
+  /*BEGIN PARTNER*/
+
+  .partner-wrap {
+    width: 25%;
+  }
+
+  .partner--margin-top {
+    margin-top: 0;
+  }
+
+  /*END PARTNER*/
+
+  /*BEGIN FOOTER*/
+
+  .footer .container {
+    max-width: 960px - 10px - 10px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .nav {
+    left: 238px;
+    top: 25px;
+  }
+
+  .footer {
+    padding: 38px 0 92px 0;
+
+    .company, .partners {
+      margin: 0 0 0 107px;
+    }
+    .partners {
+      margin-left: 93px;
+    }
+  }
+
+  /*END FOOTER*/
+}

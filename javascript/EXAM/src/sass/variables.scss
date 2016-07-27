@@ -7,14 +7,19 @@
   clear: both;
 }
 
-
-a {
-  text-decoration: none;
-}
 //variables for fonts
 $Roboto: 'Roboto Light', Arial, sans-serif;
 $MontserratRegular: 'Montserrat Regular', Arial, sans-serif;
 $MontserratBold: 'Montserrat Bold', Arial, sans-serif;
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font: 22px $MontserratBold;
+  color: #333;
+}
 
 //variables for colors
 

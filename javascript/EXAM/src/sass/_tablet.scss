@@ -1,0 +1,184 @@
+@media (min-width: 768px) {
+
+  /*BEGIN HEADER*/
+
+  .header {
+    padding: 50px 50px 212px 50px;
+  }
+
+  .logo {
+    margin: 0;
+    float: left;
+  }
+
+  .login {
+    margin: 0;
+    float: right;
+  }
+
+  .header__title {
+    margin-top: 144px;
+    font-size: 52px;
+  }
+
+  .header__description {
+    margin-top: 21px;
+    font-size: 24px;
+  }
+
+  .header .btn-search-partner {
+    margin-top: 32px;
+    width: 230px;
+  }
+
+  /*END HEADER*/
+
+  /*BEGIN HOW*/
+
+  .container {
+    padding: 95px 10px 0 10px;
+  }
+
+  .how h2 {
+    margin-bottom: 23px;
+  }
+
+  .step-wrap {
+    width: 33.3%;
+    float: left;
+  }
+
+  .step {
+    width: 236px - 19px - 19px;
+    height: 417px - 211px - 20px;
+    padding-top: 211px;
+
+    &--bg1 {
+      background: #ccc url(../img/step-1-md.jpg) 0 0 no-repeat;
+    }
+
+    &--bg2-and-padding-and-margin {
+      height: 417px - 259px - 20px;
+      padding-top: 259px;
+      background: #ccc url(../img/step-2-md.jpg) 0 0 no-repeat;
+    }
+
+    &--bg3 {
+      background: #ccc url(../img/step-3-md.jpg) 0 0 no-repeat;
+    }
+  }
+
+  /*END HOW*/
+
+  /*BEGIN PARTNER*/
+
+  .partner {
+    padding-top: 95px;
+  }
+
+  .partner h2 {
+    margin-bottom: 35px;
+  }
+
+  .partner-wrap {
+    width: 50%;
+    float: left;
+  }
+
+  .partner {
+    margin-top: 0;
+    &--margin {
+      margin-top: 0;
+    }
+    &--margin-top {
+      margin-top: 56px;
+    }
+  }
+
+  .partner .btn-more-partners {
+    width: 190px;
+  }
+
+  /*END PARTNER*/
+
+  /*BEGIN IDEAS*/
+
+  .ideas {
+    margin-top: 97px;
+  }
+
+  .ideas h2 {
+    margin-bottom: 14px;
+    margin-top: 97px;
+  }
+
+  .tile {
+    max-width: 32.3%;
+    margin: 20px 0 0 0;
+    float: left;
+  }
+
+  .form-search-partner {
+    width: 410px;
+    margin: 28px auto 0 auto;
+
+    &__field {
+      width: 238px - 15px - 15px;
+      margin-top: 39px;
+      margin-right: 10px;
+      float: left;
+    }
+
+    &__btn {
+      width: 159px;
+      margin-top: 39px;
+      float: left;
+    }
+  }
+
+  /*END IDEAS*/
+
+  /*BEGIN FOOTER*/
+
+  .footer {
+    padding: 38px 40px 92px 40px;
+    margin-top: 100px;
+    text-align: left;
+    position: relative;
+
+    .logo-footer {
+      float: left;
+    }
+
+    .company, .partners {
+      margin: 0 0 0 94px;
+      float: left;
+    }
+
+    .partners {
+      margin-left: 100px;
+    }
+  }
+
+  .nav {
+    width: 100px;
+    position: absolute;
+    left: 256px;
+    top: 64px;
+
+    &__item {
+      margin-bottom: 6px;
+      float: none;
+    }
+  }
+
+  .developer {
+    margin-top: 0;
+    float: right;
+    text-align: right;
+  }
+
+  /*END FOOTER*/
+
+}
+
