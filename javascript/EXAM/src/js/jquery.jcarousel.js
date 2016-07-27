@@ -1,6 +1,6 @@
 /*! jCarousel - v0.3.4 - 2015-09-23
- * http://sorgalla.com/jcarousel/
- * Copyright (c) 2006-2015 Jan Sorgalla; Licensed MIT */
+* http://sorgalla.com/jcarousel/
+* Copyright (c) 2006-2015 Jan Sorgalla; Licensed MIT */
 (function($) {
     'use strict';
 
@@ -13,8 +13,8 @@
     jCarousel.parseTarget = function(target) {
         var relative = false,
             parts    = typeof target !== 'object' ?
-                rRelativeTarget.exec(target) :
-                null;
+                           rRelativeTarget.exec(target) :
+                           null;
 
         if (parts) {
             target = parseInt(parts[2], 10) || 0;
@@ -123,8 +123,8 @@
                 if (typeof key === 'string') {
                     if (typeof value === 'undefined') {
                         return typeof this._options[key] === 'undefined' ?
-                            null :
-                            this._options[key];
+                                null :
+                                this._options[key];
                     }
 
                     this._options[key] = value;
@@ -331,8 +331,8 @@
             this._items = null;
 
             var item = this.index(this._target) >= 0 ?
-                this._target :
-                this.closest();
+                           this._target :
+                           this.closest();
 
             // _prepare() needs this here
             this.circular  = this.options('wrap') === 'circular';
@@ -438,9 +438,9 @@
                 check = this.options('center') ? this._target : this._last;
 
             return end >= 0 && !this.underflow &&
-            ((wrap && wrap !== 'first') ||
-            (this.index(check) < end) ||
-            (this.tail && !this.inTail)) ? true : false;
+                ((wrap && wrap !== 'first') ||
+                    (this.index(check) < end) ||
+                    (this.tail && !this.inTail)) ? true : false;
         },
         hasPrev: function() {
             if (false === this._trigger('hasprev')) {
@@ -450,9 +450,9 @@
             var wrap = this.options('wrap');
 
             return this.items().length > 0 && !this.underflow &&
-            ((wrap && wrap !== 'last') ||
-            (this.index(this._first) > 0) ||
-            (this.tail && this.inTail)) ? true : false;
+                ((wrap && wrap !== 'last') ||
+                    (this.index(this._first) > 0) ||
+                    (this.tail && this.inTail)) ? true : false;
         },
         clipping: function() {
             return this._element['inner' + (this.vertical ? 'Height' : 'Width')]();
@@ -791,8 +791,8 @@
                 }, this);
 
             var opts = typeof animation === 'object' ?
-                    $.extend({}, animation) :
-                {duration: animation},
+                           $.extend({}, animation) :
+                           {duration: animation},
                 oldComplete = opts.complete || $.noop;
 
             if (animate === false) {
@@ -1144,8 +1144,8 @@
                     .jcarousel(parsed.target > 0 ? 'hasNext' : 'hasPrev');
             } else {
                 var target = typeof parsed.target !== 'object' ?
-                    carousel.jcarousel('items').eq(parsed.target) :
-                    parsed.target;
+                                carousel.jcarousel('items').eq(parsed.target) :
+                                parsed.target;
 
                 active = carousel.jcarousel('target').index(target) >= 0;
             }
@@ -1372,7 +1372,7 @@
             msHidden: 'msvisibilitychange',
             webkitHidden: 'webkitvisibilitychange'
         }
-        ;
+    ;
 
     $.each(visibilityChangeEventNames, function(key, val) {
         if (typeof document[key] !== 'undefined') {

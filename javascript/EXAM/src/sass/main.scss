@@ -1,8 +1,8 @@
-@import 'reset',
-        'fonts',
-        'variables';
+@import 'base/reset',
+        'base/fonts',
+        'base/base';
 
-@import 'carousel';
+@import 'components/carousel';
 
 @import 'mobile',
         'tablet',

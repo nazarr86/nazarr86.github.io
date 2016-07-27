@@ -1,0 +1,34 @@
+$transitionDuration: 1s;
+$btn-bg: #ff4e50;
+$btn-color: #fff;
+
+$RobotoLight: 'Roboto Light', Arial, sans-serif;
+$MontserratBold: 'Montserrat Bold', Arial, sans-serif;
+$MontserratRegular: 'Montserrat Regular', Arial, sans-serif;
+
+.clearfix:after,
+.clearfix:before {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font: 22px $MontserratBold;
+	color: #333;
+}
+
+%btn-search-partner {
+	display: block;
+	width: 284px;
+	padding: 11px 0;
+	border-radius: 20px;
+	margin: 0 auto;
+	background: $btn-bg;
+	font: 14px $MontserratBold;
+	color: $btn-color;
+}
