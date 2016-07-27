@@ -1,6 +1,6 @@
 $(function () {
 
-	// инит. масонри
+	// init masonry
 	var $tiles = $('.tiles');
 
 	$(document).ajaxComplete(function() {
@@ -20,7 +20,7 @@ $(function () {
 	});
 
 
-	// получение картинок с сервера и вставка на страницу
+	// get pictures from server
 	var $searchField = $('.form-search-partner__field');
 	var $searchBtn = $('.form-search-partner__btn');
 	var tmplHtml = $('#tmplHtml').html();
@@ -41,7 +41,7 @@ $(function () {
 		});
 	}
 
-	ajaxQuery('country');
+	ajaxQuery('journey');
 
 	$searchBtn.click(function (e) {
 		var query = $searchField.val();
@@ -56,7 +56,7 @@ $(function () {
 	});
 
 
-	// карусель
+	// carousel
 	if ( $('html').width() < 751 ) {
 		return;
 	} else {

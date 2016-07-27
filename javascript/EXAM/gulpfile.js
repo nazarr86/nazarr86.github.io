@@ -12,7 +12,6 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
-    spritesmith = require('gulp.spritesmith'),
     reload = browserSync.reload;
 
 var path = {
@@ -26,18 +25,16 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/*.js',
-        style: ['src/sass/main.scss', 'src/sass/ie8.scss'],
+        style: 'src/sass/main.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/*.*',
-        sprite: 'src/img/sprite/*.*'
+        fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/*.js',
         style: 'src/sass/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/*.*',
-        sprite: 'src/img/sprite/*.*'
+        fonts: 'src/fonts/**/*.*'
     },
     clean: './dist'
 };
@@ -49,7 +46,7 @@ var config = {
     tunnel: true,
     host: 'localhost',
     port: 8000,
-    logPrefix: "Test_task"
+    logPrefix: "My_task"
 };
 
 gulp.task('webserver', function () {
@@ -77,18 +74,6 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('sprite', function () {
-    var spriteData =
-        gulp.src(path.src.sprite)
-            .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: 'sprite.css',
-                imgPath: '../img/sprite.png'
-            }));
-
-    spriteData.img.pipe(gulp.dest('dist/img'));
-    return spriteData.css.pipe(gulp.dest('dist/css/'));
-});
 
 gulp.task('style:build', function () {
 
@@ -123,7 +108,6 @@ gulp.task('fonts:build', function() {
 
 gulp.task('build', [
     'html:build',
-    'sprite',
     'js:build',
     'style:build',
     'fonts:build',
@@ -145,9 +129,6 @@ gulp.task('watch', function(){
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
-    });
-    watch([path.watch.sprite], function(event, cb) {
-        gulp.start('sprite:build');
     });
 });
 
