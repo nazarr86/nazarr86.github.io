@@ -72,6 +72,74 @@
         }
 }
 
+//******HOW-WORKS******
+.wrapper {
+        padding: 95px 10px 0 10px;
+        text-align: center;
+}
+
+.how-works h2 {
+        margin-bottom: 23px;
+}
+
+.step-wrap {
+        width: 33.3%;
+        float: left;
+}
+
+.step {
+        width: 301px - 19px - 19px;
+        height: 416px - 230px - 20px;
+        margin: 10px auto 0 auto;
+        padding: 230px 19px 5px 19px;
+        border-radius: 5px;
+        text-align: left;
+        &__btn {
+                display: inline-block;
+                padding: 4px 8px;
+                background: $btn-bg;
+                border-radius: 20px;
+                font: 10px $MontserratRegular;
+                color: $btn-color;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                &:hover {
+                        background: #EC4547;
+                }
+        }
+        &__title {
+                margin-top: 15px;
+                font: 24px $MontserratBold;
+                color: #fff;
+        }
+        &__text {
+                margin-top: 10px;
+                font: 14px/17px $RobotoLight;
+                color: #ccc;
+        }
+        &--bg1 {
+                width: 300px - 19px - 19px;
+                height: 267px - 81px - 20px;
+                background: #ccc url(../img/step-1-lg.jpg) 0 0 no-repeat;
+        }
+        &--bg2-and-padding {
+                width: 300px - 19px - 19px;
+                height: 259px - 102px - 20px;
+                padding: 99px 19px 4px 19px;
+                background: #ccc url(../img/step-2-lg.jpg) 0 0 no-repeat;
+        }
+        &--bg2-and-padding-and-margin {
+                height: 416px - 259px - 20px;
+                padding-top: 259px;
+                background: #ccc url(../img/step-2-lg.jpg) 0 0 no-repeat;
+        }
+        &--bg3 {
+                width: 300px - 19px - 19px;
+                height: 263px - 81px - 20px;
+                background: #ccc url(../img/step-3-lg.jpg) 0 0 no-repeat;
+        }
+}
+
 //******MEET-PARTNER******
 
 .meet-partner {
