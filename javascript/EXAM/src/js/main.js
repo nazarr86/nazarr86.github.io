@@ -11,7 +11,7 @@ $(function () {
 				$tiles.masonry({
 					itemSelector: ".tile",
 					columnWidth: ".tile",
-					gutter: 5
+					gutter: 10
 				});
 			});
 		} catch(err) {
