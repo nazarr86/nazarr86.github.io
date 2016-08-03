@@ -101,7 +101,9 @@
 }
 
 .developer {
-        margin-top: 15px;
+        margin-top: 0;
+        float: right;
+        text-align: right;
         &__designed {
                 font: 10px $MontserratBold;
                 color: #ccc;
@@ -114,11 +116,15 @@
 }
 
 .nav {
-        width: 210px;
+        width: 100px;
+        position: absolute;
+        left: 238px;
+        top: 25px;
         margin: 0 auto;
         &__item {
                 margin-left: 13px;
-                float: left;
+                margin-bottom: 6px;
+                float: none;
         }
         &__link {
                 font: 14px $RobotoLight;
