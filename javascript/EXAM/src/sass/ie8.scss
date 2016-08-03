@@ -80,10 +80,12 @@
         margin-top: 41px;
         text-align: center;
         .logo-footer a {
+                float: left;
                 font: 16px $MontserratBold;
                 color: #ff4e50;
         }
         .company, .partners {
+                float: left;
                 margin: 0 0 0 107px;
                 font: 14px $MontserratBold;
                 color: #333;
