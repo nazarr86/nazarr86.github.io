@@ -274,6 +274,67 @@
         }
 }
 
+//******HOLIDAY-IDEAS******
+
+.holiday-ideas {
+        margin-top: 97px;
+}
+
+.holiday-ideas h2 {
+        margin-bottom: 14px;
+        margin-top: 97px;
+}
+
+.tile {
+        max-width: 32.3%;
+        margin: 20px 5px 0 0px;
+        float: left;
+        position: relative;
+        &__tag {
+                font: 22px $MontserratBold;
+                color: #fff;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+        }
+        &__img {
+                width: 100%;
+                border-radius: 5px;
+        }
+}
+
+.form-search-partner {
+        width: 410px;
+        margin: 28px auto 0 auto;
+        &__title {
+                font: 18px $RobotoLight;
+                color: #333;
+        }
+        &__field {
+                width: 238px - 15px - 15px;
+                margin-top: 39px;
+                margin-right: 10px;
+                float: left;
+                padding: 9px 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font: 14px $RobotoLight;
+                color: #999;
+        }
+        &__btn {
+                width: 159px;
+                margin-top: 39px;
+                float: left;
+                @extend %btn-search-partner;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                        background: #EC4547;
+                }
+        }
+}
+
 //******FOOTER******
 
 .footer {
