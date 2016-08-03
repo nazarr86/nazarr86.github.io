@@ -71,3 +71,60 @@
                 background: #EC4547;
         }
 }
+
+//******FOOTER******
+
+.footer {
+        padding: 38px 0 92px 0;
+        border-top: 4px solid #ff4e50;
+        margin-top: 41px;
+        text-align: center;
+        .logo-footer a {
+                font: 16px $MontserratBold;
+                color: #ff4e50;
+        }
+        .company, .partners {
+                margin: 0 0 0 107px;
+                font: 14px $MontserratBold;
+                color: #333;
+        }
+        .partners {
+                margin-left: 93px;
+        }
+}
+
+.footer .wrap {
+        max-width: 960px - 10px - 10px;
+        padding: 0 10px;
+        margin: 0 auto;
+        position: relative;
+}
+
+.developer {
+        margin-top: 15px;
+        &__designed {
+                font: 10px $MontserratBold;
+                color: #ccc;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+        }
+        &__logo {
+                margin-top: 10px;
+        }
+}
+
+.nav {
+        width: 210px;
+        margin: 0 auto;
+        &__item {
+                margin-left: 13px;
+                float: left;
+        }
+        &__link {
+                font: 14px $RobotoLight;
+                color: #666;
+                &:hover {
+                        color: #EC4547;
+                }
+        }
+}
