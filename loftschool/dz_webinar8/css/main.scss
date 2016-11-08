@@ -3,9 +3,12 @@ $white: #f6f6f6;
 $blue: #33c1e3;
 
 //layout
+@import "_misc/fonts";
 @import "_misc/adjustment";
 @import "_misc/normalize";
-@import "_misc/mixins"
+@import "_misc/mixins";
 
 //styles
 @import "sections/header";
+@import "sections/footer";
+

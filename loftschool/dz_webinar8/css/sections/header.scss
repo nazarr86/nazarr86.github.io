@@ -1,6 +1,26 @@
 .header {
-	height: 80px;
 	background: #fff;
-
 	@include box-shadow(0 1px 3px 0 rgba(#000, .5));	
+	@extend %clearfix;
+	@include fira();
+}
+
+.header__left, .header_right {
+	float: left;
+	width: 50%;
+}
+
+.container {
+	@extend %clearfix;
+}
+
+.user__avatar {
+	@include inlineblock(middle);
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+}
+
+.user__name{
+	@include inlineblock(middle);
 }

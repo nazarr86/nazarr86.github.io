@@ -1,0 +1,15 @@
+.footer {
+	background: #414141;
+}
+
+.socials__link {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+@each $social in (vk, fb, tw) {
+	.socials__link_#{$social} {
+		background: url('../img/icons/#{$social}.png') 0 0 no-repeat;
+	}
+}
