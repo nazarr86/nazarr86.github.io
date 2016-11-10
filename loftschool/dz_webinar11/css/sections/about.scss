@@ -1,0 +1,52 @@
+.about__list {
+	@extend %clearfix;
+	margin-left: -5px;
+}
+
+.about__item {
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+	@extend %clearfix;
+}
+
+.about__item-left, .about__item-right{
+	float: left;
+}
+
+.about__item-left {
+	width: 30%;
+	text-align: center;
+}
+
+.about__item-right {
+	width: 65%;
+	margin-left: 5%;
+}
+
+.about__title {
+	font-size: 21px;
+	color: $black;
+	margin-bottom: 10px;
+}
+
+.about__text {
+	p {
+		color: $grey;
+		font-size: 14px;
+		@include fira(light);
+	}
+
+	a {
+		color: $blue;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.about__item-pic {
+	display: inline-block;
+	width: 100%;
+}
